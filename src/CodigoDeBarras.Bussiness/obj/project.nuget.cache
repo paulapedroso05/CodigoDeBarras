@@ -1,8 +1,21 @@
 {
   "version": 2,
-  "dgSpecHash": "EgBQ7uQaklU97+warNLDF+usX5xBdE/Fx64VNn+uD78fneAEfg+Eo5m4szpOizmvrVtYpkYK4kglZmZXCOl6Cw==",
+  "dgSpecHash": "j9IEEK9Yr/U94fgIn+9+Hwb82XPQHqShzTijoKNGUyH3dpkmH16gxfqi9HGo18oRvJEWUO0j5IlufEXZvPbCzw==",
   "success": true,
   "projectFilePath": "G:\\Informatica\\Paula\\CodigoDeBarra\\src\\CodigoDeBarras.Bussiness\\CodigoDeBarras.Bussiness.csproj",
-  "expectedPackageFiles": [],
-  "logs": []
+  "expectedPackageFiles": [
+    "C:\\Users\\paula.pedroso\\.nuget\\packages\\boleto.net\\2.1.0.945\\boleto.net.2.1.0.945.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "O pacote 'Boleto.Net 2.1.0.945' foi restaurado usando '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' em vez da estrutura de destino do projeto 'net5.0'. Esse pacote pode não ser totalmente compatível com o seu projeto.",
+      "libraryId": "Boleto.Net",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    }
+  ]
 }

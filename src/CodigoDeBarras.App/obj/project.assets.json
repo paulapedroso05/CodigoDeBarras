@@ -2,6 +2,17 @@
   "version": 3,
   "targets": {
     "net5.0": {
+      "Boleto.Net/2.1.0.945": {
+        "type": "package",
+        "compile": {
+          "lib/Boleto.Net.dll": {},
+          "lib/NReco.PdfGenerator.dll": {}
+        },
+        "runtime": {
+          "lib/Boleto.Net.dll": {},
+          "lib/NReco.PdfGenerator.dll": {}
+        }
+      },
       "Microsoft.Extensions.ApiDescription.Server/3.0.0": {
         "type": "package",
         "build": {
@@ -79,6 +90,19 @@
     }
   },
   "libraries": {
+    "Boleto.Net/2.1.0.945": {
+      "sha512": "FfGbBfombANMpKNlNtOTdTQCF89pbgJiuXnb7Ukhue3Q1UfmIvZiWoXvzTSMhjbXSk89dXuUJEAT+YF7oL0n1w==",
+      "type": "package",
+      "path": "boleto.net/2.1.0.945",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "boleto.net.2.1.0.945.nupkg.sha512",
+        "boleto.net.nuspec",
+        "lib/Boleto.Net.dll",
+        "lib/NReco.PdfGenerator.dll"
+      ]
+    },
     "Microsoft.Extensions.ApiDescription.Server/3.0.0": {
       "sha512": "LH4OE/76F6sOCslif7+Xh3fS/wUUrE5ryeXAMcoCnuwOQGT5Smw0p57IgDh/pHgHaGz/e+AmEQb7pRgb++wt0w==",
       "type": "package",
@@ -189,6 +213,7 @@
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "Boleto.Net >= 2.1.0.945",
       "Swashbuckle.AspNetCore >= 5.6.3"
     ]
   },
@@ -236,6 +261,10 @@
       "net5.0": {
         "targetAlias": "net5.0",
         "dependencies": {
+          "Boleto.Net": {
+            "target": "Package",
+            "version": "[2.1.0.945, )"
+          },
           "Swashbuckle.AspNetCore": {
             "target": "Package",
             "version": "[5.6.3, )"
@@ -262,5 +291,17 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "O pacote 'Boleto.Net 2.1.0.945' foi restaurado usando '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' em vez da estrutura de destino do projeto 'net5.0'. Esse pacote pode não ser totalmente compatível com o seu projeto.",
+      "libraryId": "Boleto.Net",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    }
+  ]
 }
