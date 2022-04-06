@@ -1,3 +1,5 @@
+using CodigoDeBarras.Bussiness.Interface;
+using CodigoDeBarras.Bussiness.Service;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -32,6 +34,8 @@ namespace CodigoDeBarras.App
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "CodigoDeBarras.App", Version = "v1" });
             });
+
+            services.AddScoped<IBancoDoBrasilService, BancoDoBrasil>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
